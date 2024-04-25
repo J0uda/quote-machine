@@ -1,13 +1,67 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.box-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  transition: 1s ease-in-out;
+}
+
+#quate-box {
+  display: table;
+  border-radius: 3px;
+  max-width: 450px;
+  padding: 40px 40px;
+  background-color: #fff;
+}
+
+#text {
+  text-align: center;
+  max-width: 450px;
+  height: auto;
+  font-weight: 500;
+  font-size: 1.75em;
+  transition: 1s ease-in-out;
+}
+
+#author {
+  transition: 1s ease-in-out;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.fa {
+  font-size: 1em;
+}
+
+.button-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+}
+
+#tweet-quote {
+  margin-right: 5px;
+}
+
+.next-quote {
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  border-radius: 3px;
+  font-size: 0.85em;
+}
+
+.next-quote:hover {
+  background-color: #fff;
+  transition: 0.5s ease-in-out;
 }
